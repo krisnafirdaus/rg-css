@@ -52,3 +52,42 @@ a:hover {
 a:active {
   background-color: blueviolet;
 }
+
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+}
+
+:nth-child(3) {
+  color: blue;
+}
+
+p::first-line {
+  color: #ff0000;
+}
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}
+
+h1::before {
+  content: url(smiley.jpeg);
+}
+
+h1::after {
+  content: url(smiley.jpeg);
+}
+
+a[target="_blank"] {
+  background-color: aqua;
+}
+
+[title~="flower"] {
+  width: 30px;
+  height: 30px;
+}
+
+[class^="top"] {
+  color: yellow;
+}

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
+    <style>
+      h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+    </style>
     <title>Test CSS</title>
   </head>
   <body>
@@ -25,7 +32,9 @@
     <!-- Will NOT match -->
     <div>
       <section>
-        <p>Paragraph 2 in the div (inside a section element).</p>
+        <p style="color: red">
+          Paragraph 2 in the div (inside a section element).
+        </p>
       </section>
     </div>
 
@@ -46,5 +55,52 @@
 
     <!-- Anchor Pseudo-classes -->
     <p><a href="default.asp" target="_blank">This is a link</a></p>
+
+    <!-- Pseudo-classes and HTML Classes -->
+    <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+    <!-- Positional Selectors -->
+    <ul>
+      <li>nope</li>
+      <li>nope</li>
+      <!-- WILL match -->
+      <li>yep, I'm #3</li>
+    </ul>
+
+    <!-- The ::first-line Pseudo-element -->
+    <h1>Demo of the ::first-line selector</h1>
+
+    <h2>WWF's Mission Statement</h2>
+    <p>
+      To stop the degradation of the planet's natural environment and to build a
+      future in which humans live in harmony with nature, by; conserving the
+      world's biological diversity, ensuring that the use of renewable natural
+      resources is sustainable, and promoting the reduction of pollution and
+      wasteful consumption.
+    </p>
+
+    <!-- Pseudo-elements and HTML Classes -->
+    <p class="intro">This is an introduction.</p>
+
+    <!-- ::before & :after Pseudo-element -->
+    <h1>This is a heading</h1>
+
+    <!-- [attribute] Selector -->
+    <!-- Will NOT match -->
+    <a href="https://www.ruangguru.com">ruangguru.com</a>
+    <!-- WILL match -->
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
   </body>
+
+  <!-- attribute~="value"] Selector -->
+  <!-- Will NOT match -->
+  <img src="smiley.jpeg" title="tree" width="200" height="358" />
+  <!-- WILL match -->
+  <img src="smiley.jpeg" title="klematis flower" width="150" height="113" />
+  <img src="smiley.jpeg" title="flower" width="224" height="162" />
+
+  <!-- [attribute|="value"] Selector -->
+  <p class="topcontent">Are you learning CSS?</p>
+  <!-- WILL match -->
+  <p class="top-text">Hello world!</p>
 </html>
