@@ -1,0 +1,54 @@
+h1 {
+  color: red;
+}
+
+/* #happy-cake {
+  background-color: white;
+} */
+
+div h1 {
+  color: blueviolet;
+}
+
+div h2 {
+  color: pink;
+}
+
+.module {
+  background-color: aqua;
+}
+
+/* Element */
+div > p {
+  background-color: blanchedalmond;
+}
+
+/* Class & Id */
+.name #instructor {
+  background-color: blue;
+}
+
+di {
+  color: red;
+}
+
+.general-sibling ~ p {
+  color: blue;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+/* visited link */
+a:visited {
+  color: black;
+}
+/* mouse over link */
+a:hover {
+  color: aqua;
+}
+/* selected link */
+a:active {
+  background-color: blueviolet;
+}

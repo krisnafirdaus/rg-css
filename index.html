@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Test CSS</title>
+  </head>
+  <body>
+    <h1>Krisna Firdaus</h1>
+    <div class="name">
+      <h1>Frontend</h1>
+      <h2 id="instructor">Instructor</h2>
+    </div>
+    <div class="module">
+      <section>
+        <h1>Module CSS</h1>
+      </section>
+    </div>
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+    </div>
+    <!-- Will NOT match -->
+    <div>
+      <section>
+        <p>Paragraph 2 in the div (inside a section element).</p>
+      </section>
+    </div>
+
+    <!-- Sibling element -->
+    <div>
+      <a>Anchor</a>
+    </div>
+    <p>WILL match this Paragraph</p>
+    <p>Will NOT match this Paragraph</p>
+
+    <!-- General Sibling Selector -->
+    <p>Will NOT match this Paragraph</p>
+    <div class="general-sibling">
+      <p>Will NOT match this Paragraph</p>
+    </div>
+    <p>WILL match this Paragraph</p>
+    <p>WILL match this Paragraph</p>
+
+    <!-- Anchor Pseudo-classes -->
+    <p><a href="default.asp" target="_blank">This is a link</a></p>
+  </body>
+</html>
