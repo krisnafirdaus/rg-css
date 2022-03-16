@@ -1,3 +1,11 @@
+html {
+  background: url(smiley.jpeg);
+  background-position: 100px 5px;
+  background-size: 300px 100px;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
 h1 {
   color: red;
 }
@@ -7,7 +15,7 @@ h1 {
 } */
 
 div h1 {
-  color: blueviolet;
+  color: rgb(0, 255, 255);
 }
 
 div h2 {
@@ -90,4 +98,11 @@ a[target="_blank"] {
 
 [class^="top"] {
   color: yellow;
+}
+
+.box-model {
+  /* border-top: 5px solid red; */
+  border: 5px solid red;
+  padding: 50px;
+  margin: 50px;
 }
